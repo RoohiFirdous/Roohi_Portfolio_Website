@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roohi Firdous Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cca12a3ba8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo3.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hello, I'm <span>Roohi</span><br>Firdous from Canada</h1>
+        </div>
+    </div>
+</div>
+<!----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/background_phone_1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Results-oriented software developer with experience in implementing
+                   software solutions. Proficient in PL/SQL, R and Python, with a strong
+                   foundation in data manipulation and data visualization. Demonstrated 
+                   ability to analyse complex problems and communicate findings effectively.
+                   Eager to apply programming expertise in software development to drive data
+                   centric solutions for business growth.</p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>PL/SQL, JAVA, JavaScript, HTML & CSS, R-language, PySpark </li>
+                        <li><span>Data Visualization</span><br>Tableau, Microsoft Excel</li>
+                        <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                        <li><span>Data Analysis</span><br>Machine Learning Models, Reinforcement Learning, Classification and Regression</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Dec 2022-Present</span><br>Customer Service Representative at IO Solutions, Montreal, QC</li>
+                        <li><span>Apr 2022-Dec 2022</span><br>Cashier at Fruiterie Anka, Montreal, QC</li>
+                        <li><span>Aug 2017-May 2019</span><br>Member Technical at ADP Private Ltd, Hyderabad, India</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Jan 2022- July 2023</span><br>AEC in Artificial Intelligence and Machine Learning from Ascent College of Technology, Montreal</li>
+                        <li><span>2013-2017</span><br>B.Tech in Computer Science and Engineering from CMR Engineering College, Hyderabad, India </li>
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>   
+<!-------------services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Application Development</h2>
+                <p>Developed efficient PL/SQL queries, functions, stored procedures, views, and indexes that reduced data retrieval times by 25%. Enhanced performance of complex SQL queries, achieving a 30% reduction in execution time.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Analysis</h2>
+                <p>Deep Learning (CNN, RNN), Natural Language Processing, Data preprocessing, Model Evaluation and Hyperparameter Tuning</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Visualization</h2>
+                <p>Worked with Tableau to visualize datasets</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!----------------Portfolio Details----------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png"> 
+                <div class="layer">
+                    <h3>Generate Captions for Images</h3>
+                    <p>Deep learning model using Vision Transformer and PyTorch to automatically 
+                        generate descriptive captions for images, bridging computer vision and 
+                        natural language processing.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png"> 
+                <div class="layer">
+                    <h3>Fake News Detection</h3>
+                    <p>Developed machine learning based fake news detection system, to automatically 
+                        identify and classify fake news, articles and misinformation.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png"> 
+                <div class="layer">
+                    <h3>Data Analysis with SQL</h3>
+                    <p>Conducted comprehensive data analysis using SQL on European Soccer Database
+                         to extract valuable insights and trends from player statistics, 
+                         team performance and match results</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----Contack Details-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-share-from-square"></i>rf.roohi6@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/roohi-f-930b78134/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/RoohiFirdous"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/CV_ROOHI_FIRDOUS.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <!---<span id="msg">Hello</span>-->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Roohi Firdous</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+</body>
+</html>
